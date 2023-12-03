@@ -20,6 +20,7 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="vendor/mdb-ui-kit/css/mdb.min.css" rel="stylesheet">
 <script src="vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
 <!-- =======================================================
 * Template Name: NiceAdmin - v2.3.1
 * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/

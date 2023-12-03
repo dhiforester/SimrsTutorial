@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <?php
+            include "_Config/Connection.php";
+            include "_Config/Session.php";
             include "_Partial/Head.php";
         ?>
     </head>

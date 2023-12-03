@@ -61,7 +61,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#ModalLogout">
+            <a class="nav-link" href="_Page/Logout/Logout.php">
                 <i class="bi bi-box-arrow-in-left"></i>
                 <span>Keluar</span>
             </a>
