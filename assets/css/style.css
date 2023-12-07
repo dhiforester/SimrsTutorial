@@ -45,6 +45,8 @@ h6 {
   margin-top: 60px;
   padding: 20px 30px;
   transition: all 0.3s;
+  background: #f6f9ff;
+  padding-bottom: 300px;
 }
 
 @media (max-width: 1199px) {
@@ -233,15 +235,20 @@ h6 {
   border-color: #d3d3d4;
 }
 .login_background {
-  background: rgb(0, 0, 0);
+  background: rgb(57,74,81);
+  background: linear-gradient(90deg, rgba(57,74,81,1) 0%, rgba(44,57,62,1) 35%, rgba(57,74,81,1) 100%); 
+}
+.nav_background {
+  background: rgb(26,38,57);
+  background: linear-gradient(90deg, rgba(26,38,57,1) 0%, rgba(26,38,57,1) 35%, rgba(26,38,57,1) 100%); 
 }
 .landing_background {
-  background: rgb(3, 3, 3);
-  background: linear-gradient(90deg, #1f2542 37.5%, #1f2542 97.92%, #1f2542 100%);
+  background: rgb(114,171,230);
+  background: linear-gradient(90deg, #006677 37.5%, #69C8D9 97.92%, #6CCBDC 100%);
 }
 .menu_background {
-  background: rgb(3, 3, 3);
-  background: linear-gradient(90deg, #242c53 37.5%, #242c53 97.92%, #242c53 100%);
+  background: rgb(35,49,66);
+  background: linear-gradient(90deg, rgba(35,49,66,1) 0%, rgba(35,49,66,1) 35%, rgba(35,49,66,1) 100%);
 }
 /* Card */
 .card {
@@ -495,13 +502,13 @@ h6 {
 
 .header-nav .nav-icon {
   font-size: 22px;
-  color: #dadada;
+  color: #012970;
   margin-right: 25px;
   position: relative;
 }
 
 .header-nav .nav-profile {
-  color: #dadada;
+  color: #012970;
 }
 
 .header-nav .nav-profile img {
@@ -843,6 +850,10 @@ h6 {
   height: 64px;
   flex-shrink: 0;
   flex-grow: 0;
+}
+.dashboard .blue-card .card-icon {
+  color: #929292;
+  background: #dbdbdb;
 }
 
 .dashboard .sales-card .card-icon {
@@ -1250,7 +1261,6 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  margin-top: 300px;
   padding: 20px 0;
   font-size: 14px;
   transition: all 0.3s;

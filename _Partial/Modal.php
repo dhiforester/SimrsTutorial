@@ -1,9 +1,13 @@
 <?php
     if(empty($_GET['Page'])){
-        $Page="";
+        include "_Page/Beranda/ModalBeranda.php";
     }else{
         $Page=$_GET['Page'];
+        //Nanti Di Routing Fitur Modal atau Popup Di Sini
+        if($Page=="Akses"){
+            include "_Page/Akses/ModalAkses.php";
+        }
     }
-    //Nanti Di Routing Fitur Modal atau Popup Di Sini
-    include "_Page/Beranda/ModalBeranda.php";
+    //Modal Global
+    include "_Page/Logout/ModalLogout.php";
 ?>

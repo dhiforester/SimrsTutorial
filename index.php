@@ -12,7 +12,7 @@
             include "_Partial/Navbar.php";
             include "_Partial/Menu.php";
         ?>
-        <main id="main" class="main">
+        <main id="main" class="main mb-5">
             <?php
                 include "_Partial/PageTitle.php";
                 include "_Partial/RoutingPage.php";

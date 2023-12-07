@@ -1,4 +1,4 @@
-<header id="header" class="header fixed-top d-flex align-items-center landing_background">
+<header id="header" class="header fixed-top d-flex align-items-center nav_background">
     <!-- Logo Dan Nama Aplikasi -->
     <div class="d-flex align-items-center justify-content-between">
         <a href="index.php" class="logo d-flex align-items-center">
@@ -24,7 +24,7 @@
             </li>
             <!-- Notifikasi -->
             <li class="nav-item dropdown">
-                <a class="nav-link nav-icon" href="javascript:void(0);" data-bs-toggle="dropdown">
+                <a class="nav-link nav-icon text-white" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <i class="bi bi-bell"></i>
                     <span class="badge bg-danger rounded-pill badge-number">2</span>
                 </a>
@@ -54,7 +54,7 @@
             </li>
             <!-- Profile User -->
             <li class="nav-item dropdown pe-3">
-                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0 text-white" href="#" data-bs-toggle="dropdown">
                     <img src="assets/img/User/No-Image.png" alt="Profile" class="rounded-circle">
                     <span class="d-none d-md-block dropdown-toggle ps-2">Nama User</span>
                 </a>
