@@ -21,6 +21,7 @@
                         </div>
                         <div class="col-md-8">
                             <input type="text" name="kontak_akses" id="kontak_akses" class="form-control" placeholder="62">
+                            <small>Hanya boleh angka (maksimal 20 karakter)</small>
                         </div>
                     </div>
                     <div class="row mb-4">
@@ -72,6 +73,7 @@
                                     }
                                 ?>
                             </datalist>
+                            <small>Maksimal Terdiri Dari 20 karakter</small>
                         </div>
                     </div>
                     <div class="row">
@@ -99,8 +101,12 @@
                 <h5 class="modal-title text-light"><i class="bi bi-person-fill"></i> Detail Akses</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div id="FormDetailAkses">
-                
+            <div class="modal-body" id="FormDetailAkses">
+            </div>
+            <div class="modal-footer bg-info">
+                <button type="button" class="btn btn-dark btn-rounded" data-bs-dismiss="modal">
+                    <i class="bi bi-x-circle"></i> Tutup
+                </button>
             </div>
         </div>
     </div>
@@ -109,15 +115,22 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <form action="javascript:void(0);" id="ProsesEditAkses">
-                <div class="modal-header bg-primary">
-                    <h5 class="modal-title text-light"><i class="bi bi-person-plus"></i> Edit Akses</h5>
+                <div class="modal-header bg-success">
+                    <h5 class="modal-title text-light"><i class="bi bi-pencil"></i> Edit Akses</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" id="FormEditAkses">
-                    
+                <div class="modal-body">
+                    <div id="FormEditAkses">
+                        <!-- Menampilkan Form Ketika Modal Muncul -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-3" id="NotifikasiEditAkses">
+                            <!-- Akan menampilkan notifikasi ketika di proses -->
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer bg-primary">
-                    <button type="submit" class="btn btn-success btn-rounded">
+                <div class="modal-footer bg-success">
+                    <button type="submit" class="btn btn-primary btn-rounded">
                         <i class="bi bi-save"></i> Simpan
                     </button>
                     <button type="button" class="btn btn-dark btn-rounded" data-bs-dismiss="modal">
@@ -136,8 +149,15 @@
                     <h5 class="modal-title text-light"><i class="bi bi-key"></i> Ubah Password</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" id="FormUbahPassword">
-                    
+                <div class="modal-body">
+                    <div id="FormUbahPassword">
+                        <!-- Menampilkan Form Ketika Modal Muncul -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-3" id="NotifikasiUbahPassword">
+                            <!-- Akan menampilkan notifikasi ketika di proses -->
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer bg-info">
                     <button type="submit" class="btn btn-success btn-rounded">
@@ -145,6 +165,36 @@
                     </button>
                     <button type="button" class="btn btn-dark btn-rounded" data-bs-dismiss="modal">
                         <i class="bi bi-x-circle"></i> Tutup
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="ModalHapusAkses" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <form action="javascript:void(0);" id="ProsesHapusAkses">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title text-light"><i class="bi bi-trash"></i> Hapus Akses</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="FormHapusAkses">
+                        <!-- Menampilkan Form Ketika Modal Muncul -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center mt-3" id="NotifikasiHapusAkses">
+                            <!-- Akan menampilkan notifikasi ketika di proses -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-danger">
+                    <button type="submit" class="btn btn-success btn-rounded">
+                        <i class="bi bi-check"></i> Ya, Hapus
+                    </button>
+                    <button type="button" class="btn btn-dark btn-rounded" data-bs-dismiss="modal">
+                        <i class="bi bi-x-circle"></i> Tidak
                     </button>
                 </div>
             </form>

@@ -2,10 +2,6 @@
     //Koneksi
     include "../../_Config/Connection.php";
     include "../../_Config/Session.php";
-    //Time Zone
-    date_default_timezone_set('Asia/Jakarta');
-    //Time Now Tmp
-    $now=date('Y-m-d H:i:s');
     //Validasi nama tidak boleh kosong
     if(empty($_POST['nama_akses'])){
         echo '<small class="text-danger">Nama tidak boleh kosong</small>';
