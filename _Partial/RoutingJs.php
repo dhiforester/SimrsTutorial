@@ -6,6 +6,10 @@
         $Page=$_GET['Page'];
         if($Page=="Akses"){
             echo '<script type="text/javascript" src="_Page/Akses/Akses.js"></script>';
+        }else{
+            if($Page=="Pasien"){
+                echo '<script type="text/javascript" src="_Page/Pasien/Pasien.js"></script>';
+            }
         }
     }
 ?>

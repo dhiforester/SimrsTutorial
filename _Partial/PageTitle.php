@@ -9,6 +9,12 @@
             echo '<div class="pagetitle">';
             echo '  <h1><i class="bi bi-key"></i> Akses</h1>';
             echo '</div>';
+        }else{
+            if($Page=="Pasien"){
+                echo '<div class="pagetitle">';
+                echo '  <h1><i class="bi bi-person"></i> Pasien</h1>';
+                echo '</div>';
+            }
         }
     }
     

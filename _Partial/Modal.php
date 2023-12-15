@@ -6,6 +6,10 @@
         //Nanti Di Routing Fitur Modal atau Popup Di Sini
         if($Page=="Akses"){
             include "_Page/Akses/ModalAkses.php";
+        }else{
+            if($Page=="Pasien"){
+                include "_Page/Pasien/ModalPasien.php";
+            }
         }
     }
     //Modal Global
