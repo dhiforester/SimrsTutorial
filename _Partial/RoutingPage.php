@@ -8,6 +8,12 @@
         }else{
             if($Page=="Pasien"){
                 include "_Page/Pasien/Pasien.php";
+            }else{
+                if($Page=="Pengaturan"){
+                    include "_Page/Pengaturan/Pengaturan.php";
+                }else{
+                    include "_Page/Beranda/Beranda.php";
+                }
             }
         }
     }

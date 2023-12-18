@@ -9,6 +9,12 @@
         }else{
             if($Page=="Pasien"){
                 echo '<script type="text/javascript" src="_Page/Pasien/Pasien.js"></script>';
+            }else{
+                if($Page=="Pengaturan"){
+                    echo '<script type="text/javascript" src="_Page/Pengaturan/Pengaturan.js"></script>';
+                }else{
+                    echo '<script type="text/javascript" src="_Page/Beranda/Beranda.js"></script>';
+                }
             }
         }
     }

@@ -14,6 +14,12 @@
                 echo '<div class="pagetitle">';
                 echo '  <h1><i class="bi bi-person"></i> Pasien</h1>';
                 echo '</div>';
+            }else{
+                if($Page=="Pengaturan"){
+                    echo '<div class="pagetitle">';
+                    echo '  <h1><i class="bi bi-gear"></i> Pengaturan</h1>';
+                    echo '</div>';
+                }
             }
         }
     }

@@ -9,6 +9,10 @@
         }else{
             if($Page=="Pasien"){
                 include "_Page/Pasien/ModalPasien.php";
+            }else{
+                if($Page=="Pengaturan"){
+                    include "_Page/Pengaturan/ModalPengaturan.php";
+                }
             }
         }
     }
