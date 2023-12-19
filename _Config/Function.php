@@ -29,4 +29,16 @@
         }
         return $Response;
     }
+    function getSettingVclaim($Conn,$parameter){
+        $QryParam = mysqli_query($Conn,"SELECT * FROM pengaturan WHERE kategori_pengaturan='Bridging Vclaim' AND status='Active'")or die(mysqli_error($Conn));
+        $DataParam = mysqli_fetch_array($QryParam);
+        if(empty($DataParam['pengaturan'])){
+            $Response="";
+        }else{
+            $pengaturan=$DataParam['pengaturan'];
+            $JsonData =json_decode($pengaturan, true);
+            $Response=$JsonData[$parameter];
+        }
+        return $Response;
+    }
 ?>

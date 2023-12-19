@@ -291,3 +291,29 @@ $('#ProsesHapusPasien').submit(function(){
         }
     });
 });
+//Modal Detail NIK
+$('#ModalDetailNik').on('show.bs.modal', function (e) {
+    var nik = $(e.relatedTarget).data('id');
+    $('#FormDetailNik').html("Loading...");
+    $.ajax({
+        type 	    : 'POST',
+        url 	    : '_Page/Pasien/FormDetailNik.php',
+        data        : {nik: nik},
+        success     : function(data){
+            $('#FormDetailNik').html(data);
+        }
+    });
+});
+//Modal Detail BPJS
+$('#ModalDetailBpjs').on('show.bs.modal', function (e) {
+    var no_bpjs = $(e.relatedTarget).data('id');
+    $('#FormDetailBpjs').html("Loading...");
+    $.ajax({
+        type 	    : 'POST',
+        url 	    : '_Page/Pasien/FormDetailBpjs.php',
+        data        : {no_bpjs: no_bpjs},
+        success     : function(data){
+            $('#FormDetailBpjs').html(data);
+        }
+    });
+});

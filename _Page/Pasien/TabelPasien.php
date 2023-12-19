@@ -200,7 +200,16 @@
                         <div class="col-md-12">
                             <small>
                                 <i class="bi bi-info-circle"></i> No.RM: <code class="text-secondary"><?php echo "$id_pasien"; ?></code><br>
-                                <i class="bi bi-person-badge"></i> NIK: <code class="text-secondary"><?php echo "$nik"; ?></code><br>
+                                <i class="bi bi-person-badge"></i> NIK: 
+                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#ModalDetailNik" data-id="<?php echo "$nik"; ?>">
+                                    <code class="text-info"><?php echo "$nik"; ?> <i class="bi bi-arrow-up-right-circle"></i></code>
+                                </a>
+                                <br>
+                                <i class="bi bi-person-badge"></i> BPJS: 
+                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#ModalDetailBpjs" data-id="<?php echo "$no_bpjs"; ?>">
+                                    <code class="text-info"><?php echo "$no_bpjs"; ?> <i class="bi bi-arrow-up-right-circle"></i></code>
+                                </a>
+                                <br>
                                 <i class="bi bi-calendar"></i> Tgl: <code class="text-secondary"><?php echo "$TanggalDaftar"; ?></code><br>
                             </small>
                         </div>

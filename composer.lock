@@ -1,9 +1,14 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "56ef86539ddedc8db091ddd8da2da540",
     "packages": [
         {
             "name": "nullpunkt/lz-string-php",
             "version": "1.3.0",
-            "version_normalized": "1.3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nullpunkt/lz-string-php.git",
@@ -22,9 +27,7 @@
                 "monolog/monolog": "^1.17",
                 "phpunit/phpunit": "~9.5"
             },
-            "time": "2021-06-17T07:52:00+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "LZCompressor\\": "src/LZCompressor"
@@ -48,9 +51,16 @@
                 "issues": "https://github.com/nullpunkt/lz-string-php/issues",
                 "source": "https://github.com/nullpunkt/lz-string-php/tree/1.3.0"
             },
-            "install-path": "../nullpunkt/lz-string-php"
+            "time": "2021-06-17T07:52:00+00:00"
         }
     ],
-    "dev": true,
-    "dev-package-names": []
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
 }
